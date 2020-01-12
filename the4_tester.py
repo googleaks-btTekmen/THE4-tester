@@ -18,9 +18,7 @@ with open("the4_data.json","r") as file:
         for k in range(len(result)) :
             result[k].sort()
 
-        if result == data[1]:
-            print("Succesful")
-        elif result != data[1]:
+        if result != data[1]:
             print("Failed on {}".format(data[0]))
             print("Your work found: {}".format(result))
             print("It should have been {}.".format(data[1]))
